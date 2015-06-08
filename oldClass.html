@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src= "oldClass.js"></script>
+
+<title>default </title>
+
+</head>
+
+<body ng-app="OldClass">
+<div ng-controller="myController as ctrl">
+	
+	<input type = "radio" name= "jobs" ng-value="ctrl.jobs.employee" ng-model="ctrl.model"/>Employee
+	<input type = "radio" name= "jobs" ng-value="ctrl.jobs.ceo" ng-model="ctrl.model"/>CEO
+	<input type = "radio" name= "jobs" ng-value="ctrl.jobs.founder" ng-model="ctrl.model"/>Founder
+</div>
+<hr />
+<div ng-bind="ctrl.model"></div>
+</body>
+</html>
